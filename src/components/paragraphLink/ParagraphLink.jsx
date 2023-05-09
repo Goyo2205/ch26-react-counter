@@ -21,6 +21,7 @@ ParagraphLink.propTypes = {
     href : PropTypes.string.isRequired
 }
 
+export default ParagraphLink; // exportacion por default
 
 //Props (properties): Comunican los componentes padres con los componnentes hijos
 /* const ParagraphLink = (props) => {
@@ -36,5 +37,3 @@ ParagraphLink.propTypes = {
     );
     return myParagraph;
 } ; */
-
-export default ParagraphLink; // exportacion por default
