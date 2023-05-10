@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '../button/Button';
 
 
-export const Counter = ({ initialValue=0, increment=1,decrement=1}) => {
+export const Counter = ({ initialValue, increment=1,decrement=1}) => {
 
     const [counter, setCounter] = useState(initialValue)//salio facil de useState snippet
 
