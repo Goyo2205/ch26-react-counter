@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Counter = () => {
-    let counter = 100;
+
+    const [counter, setCounter] = useState(100)//salio facil de useState snippet
+
     const handleIncrement =()=>{
-        console.log(++counter);
+        setCounter(counter + 1);
     }
+    
+    const handleDecrement =()=>{
+        setCounter(counter - 1);
+    }
+
     return (
         <>
             <h1>Counter</h1>
             <h2>{counter}</h2>
             <button onClick={handleIncrement}>+</button>
-            <button onClick={ ()=>console.log(--counter)}>-</button>
+            <button onClick={handleDecrement}>-</button>
             <button>Reset</button>
         </>
   )
